@@ -1,21 +1,38 @@
 {
   "name": "kax",
   "version": "1.0.0",
-  "description": "**Version:** v1.0 **Author:** Nick Flach + Kannaka **Date:** April 2026",
+  "description": "Kannaka Artifact Exchange - A curation intelligence layer for agent-generated creativity",
   "main": "index.js",
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
-    "dev": "ts-node src/index.ts",
+    "dev": "tsx src/index.ts",
+    "dev:client": "cd client && npm run dev",
+    "migrate": "tsx src/db/migrate.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Nick Flach",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
     "@types/node": "^25.5.0",
+    "@types/uuid": "^10.0.0",
+    "drizzle-kit": "^0.31.10",
     "ts-node": "^10.9.2",
+    "tsx": "^4.21.0",
     "typescript": "^6.0.2"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.8.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.0",
+    "drizzle-orm": "^0.45.2",
+    "express": "^5.2.1",
+    "node-fetch": "^3.3.2",
+    "sqlite3": "^6.0.1",
+    "uuid": "^13.0.0"
   }
 }

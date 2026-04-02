@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+  --color-kax-bg: #0a0a0f;
+  --color-kax-surface: #12121a;
+  --color-kax-border: #1e1e2e;
+  --color-kax-accent: #c084fc;
+  --color-kax-accent-dim: #7c3aed;
+  --color-kax-text: #e4e4e7;
+  --color-kax-text-dim: #71717a;
+  --color-kax-gold: #fbbf24;
+  --color-kax-rare: #a78bfa;
+  --color-kax-legendary: #f59e0b;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-kax-bg);
+  color: var(--color-kax-text);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
