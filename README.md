@@ -221,3 +221,7 @@ Bundles artifacts into sellable units.
 ## 🧬 Strategic Positioning
 **KAX is not:** A marketplace clone, An art generator
 **KAX is:** A curation intelligence layer for agent-generated creativity
+
+## License
+
+[Space Child License v1.0](https://legal.spacechild.love/license) — source-available and peace-conditional: free for peaceful, humanitarian, commercial and defensive use; withheld for the uses in its Peace Clause. See `LICENSE` and `NOTICE`.
