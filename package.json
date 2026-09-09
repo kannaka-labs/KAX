@@ -13,7 +13,7 @@
   },
   "keywords": [],
   "author": "Nick Flach",
-  "license": "ISC",
+  "license": "SEE LICENSE IN LICENSE",
   "type": "module",
   "devDependencies": {
     "@types/cors": "^2.8.19",
