@@ -2,7 +2,7 @@
   // Visit https://aka.ms/tsconfig to read more about this file
   "compilerOptions": {
     // File Layout
-    // "rootDir": "./src",
+    "rootDir": "./src",
     "outDir": "./dist",
 
     // Environment Settings
@@ -43,5 +43,9 @@
     "moduleDetection": "force",
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
-  }
+  },
+  // The server build. The client under client/ has its own tsconfig and is
+  // built by vite from its own node_modules; without this line tsc compiled
+  // client/src too and failed to find react (CI #4).
+  "include": ["src"]
 }
